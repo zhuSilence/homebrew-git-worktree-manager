@@ -25,7 +25,7 @@ cask "git-worktree-manager" do
 
   app "Git Worktree Manager.app"
 
-  binary "#{appdir}/Git Worktree Manager.app/Contents/MacOS/Git Worktree Manager", target: "git-worktree-manager"
+  binary "#{appdir}/Git Worktree Manager.app/Contents/MacOS/git-worktree-manager"
 
   zap trash: [
     "~/Library/Application Support/git-worktree-manager",
