@@ -1,14 +1,14 @@
 cask "git-worktree-manager" do
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     on_intel do
       url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v\#{version}/Git.Worktree.Manager_\#{version}_x64.dmg"
-      sha256 "7bebd1e6b20736a66860a644527ebf17fe6fe341c872ad0f8402453991dd5e5f"
+      sha256 "1b4ddb959f8f2384b8debfdcdafd835c52e21301a54d5b393cfb64376eca309a"
     end
     on_arm do
       url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v\#{version}/Git.Worktree.Manager_\#{version}_aarch64.dmg"
-      sha256 "a457ca056975df2175f1d233ddf3411499e763c4611875dfc9790f4f03ce70c0"
+      sha256 "395f5fa0a9fced5f893226429f09698283a9b103ecffc4bbe4edc48c763b7741"
     end
   end
 
