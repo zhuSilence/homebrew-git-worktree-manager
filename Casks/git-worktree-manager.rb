@@ -1,14 +1,14 @@
 cask "git-worktree-manager" do
-  version "0.0.13"
+  version "0.0.14"
 
   on_macos do
     on_intel do
-      url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v#{version}/Git.Worktree.Manager_#{version}_x64.dmg"
-      sha256 "27b4574c89fc362e74b179111d33fc88042ff1761507962ce92b16847e0f1194"
+      url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v\#{version}/Git.Worktree.Manager_\#{version}_x64.dmg"
+      sha256 "432fc5784e596dc2d6dad9baf5eb4c82890c9b10f455d41e83a50eae125b39f0"
     end
     on_arm do
-      url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v#{version}/Git.Worktree.Manager_#{version}_aarch64.dmg"
-      sha256 "98fe5ca13fb3b699b05c89da4fd991825cfa35be5c65f279115b56b8380e3e6c"
+      url "https://github.com/zhuSilence/git-worktree-manager/releases/download/v\#{version}/Git.Worktree.Manager_\#{version}_aarch64.dmg"
+      sha256 "cf1a742f5aad7c6e5719de224f5569fce8a51988a5c059d9ebe44c66dfe73d2a"
     end
   end
 
@@ -25,7 +25,7 @@ cask "git-worktree-manager" do
 
   app "Git Worktree Manager.app"
 
-  binary "#{appdir}/Git Worktree Manager.app/Contents/MacOS/git-worktree-manager"
+  binary "\#{appdir}/Git Worktree Manager.app/Contents/MacOS/git-worktree-manager"
 
   zap trash: [
     "~/Library/Application Support/git-worktree-manager",
